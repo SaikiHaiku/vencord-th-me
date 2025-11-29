@@ -1,1 +1,145 @@
+/**
+ * @name ULTRAKILL – Gabriel: 2nd Ascension
+ * @version 1.0
+ * @description Thème Vencord complet : image de fond Gabriel (combat), effets lumineux, style "JUDGEMENT"
+ */
 
+/* ===== IMAGE DE FOND ===== */
+/* Remplace l’URL ci-dessous par l’image Gabriel que tu préfères */
+:root {
+    --gabriel-bg: url("https://i.imgur.com/EaKM7uM.jpg");
+    --gabriel-gold: #f5d06f;
+    --gabriel-white: #fdfaf1;
+    --gabriel-red: #ff1a1a;
+    --gabriel-dark: #0a0a0d;
+    --gabriel-shadow: rgba(255, 20, 20, 0.7);
+}
+
+/* Background global */
+.appMount-3lHmkl,
+.bg-1QIAus,
+.container-2cd8Mz {
+    background: var(--gabriel-dark) url(var(--gabriel-bg)) center/cover fixed !important;
+    background-blend-mode: multiply !important;
+    color: var(--gabriel-white) !important;
+}
+
+/* Légère brume dorée par-dessus le fond */
+.appMount-3lHmkl::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(245,208,111,0.15), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ===== TYPOGRAPHIE SACRÉE ===== */
+* {
+    font-family: "Cinzel", "Trajan Pro", serif !important;
+    color: var(--gabriel-white);
+    text-shadow: 0 0 6px rgba(255, 235, 200, 0.3);
+}
+
+/* ===== HUD / TITRES ===== */
+.titleBar-1it3bQ {
+    background: rgba(15, 10, 5, 0.7);
+    border-bottom: 2px solid var(--gabriel-gold);
+}
+
+/* ===== SERVEURS ===== */
+.wrapper-1BJsBx {
+    background: rgba(20, 20, 25, 0.7) !important;
+    border-radius: 14px;
+    border: 1px solid rgba(245, 208, 111, 0.3) !important;
+    transition: 0.15s ease-in-out;
+}
+
+.wrapper-1BJsBx:hover {
+    transform: scale(1.15);
+    background: rgba(245, 208, 111, 0.4) !important;
+    box-shadow: 0 0 20px rgba(245, 208, 111, 0.7);
+}
+
+/* ===== LISTE DES CANAUX ===== */
+.containerDefault-3tr_sE {
+    background: transparent !important;
+    border-left: 3px solid transparent;
+}
+
+.containerDefault-3tr_sE:hover {
+    background: rgba(255, 20, 20, 0.1) !important;
+    border-left: 3px solid var(--gabriel-red);
+}
+
+/* ===== CHAMP DE TEXTE ===== */
+.textArea-2CLwUE {
+    background: rgba(25, 20, 15, 0.7) !important;
+    border: 2px solid var(--gabriel-gold) !important;
+    backdrop-filter: blur(4px);
+}
+
+.textArea-2CLwUE:focus {
+    background: rgba(45, 30, 10, 0.55) !important;
+    border-color: var(--gabriel-red) !important;
+    box-shadow: 0 0 20px var(--gabriel-red);
+}
+
+/* ===== BOUTONS ===== */
+.button-38aScr {
+    background: var(--gabriel-gold) !important;
+    color: black !important;
+    border-radius: 10px !important;
+}
+
+.button-38aScr:hover {
+    background: var(--gabriel-red) !important;
+    color: white !important;
+    box-shadow: 0 0 10px var(--gabriel-red);
+}
+
+/* ===== MESSAGES : effet "Judgment Light" ===== */
+.message-2CShn3 {
+    position: relative;
+    background: rgba(15, 10, 8, 0.6) !important;
+    border-left: 3px solid transparent;
+    margin-bottom: 6px;
+    padding: 8px;
+    backdrop-filter: blur(2px);
+    transition: 0.15s;
+}
+
+/* Effet lumineux autour des messages */
+.message-2CShn3:hover {
+    border-left: 3px solid var(--gabriel-gold);
+    background: rgba(255, 245, 200, 0.12) !important;
+    box-shadow: 0 0 20px rgba(245, 208, 111, 0.4);
+}
+
+/* Halo rouge agressif façon “JUDGEMENT” */
+.message-2CShn3:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 20px var(--gabriel-red);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* Nom des utilisateurs : doré sacré */
+.username-h_Y3Us {
+    color: var(--gabriel-gold) !important;
+    text-shadow: 0 0 8px var(--gabriel-shadow) !important;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gabriel-gold);
+}
+::-webkit-scrollbar-track {
+    background: rgba(10, 10, 15, 0.9);
+}
