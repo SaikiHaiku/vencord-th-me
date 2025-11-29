@@ -1,105 +1,45 @@
-/**
- * @name Gabriel ULTRAKILL (with Background)
- * @version 1.1
- * @author ChatGPT
- * @description Thème ULTRAKILL avec image de fond de Gabriel
-*/
-
-/* ---------------------------------- */
-/* BACKGROUND IMAGE                   */
-/* ---------------------------------- */
-
-/* Chemin de ton image */
-.appMount-3lHmkl, body {
-    background: url("https://i.ibb.co/B4GcqGq/Gabriel-ULTRAKILL.jpg") no-repeat center center !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
+/* Image de fond principale */
+.appMount-3lHmkl {
+    background-image: url("https://wallpaperaccess.com/full/21192974.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Couche d’assombrissement pour lisibilité */
-.appMount-3lHmkl::before {
+/* Overlay sombre pour lisibilité */
+.theme-dark .appMount-3lHmkl::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.45);
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.6); /* ajuste l’opacité si besoin */
     z-index: -1;
 }
 
-/* ---------------------------------- */
-/* COLORS / STYLE                     */
-/* ---------------------------------- */
-
-:root {
-    --gabriel-gold: #d6b65f;
-    --gabriel-red: #b81f1f;
-    --gabriel-white: #f2f2e8;
-    --gabriel-dark: #0d0d0f;
-    --gabriel-glow: 0 0 12px rgba(214, 182, 95, 0.8);
+/* Couleur des messages */
+.message-2qnXI6 {
+    color: #ffffff; /* blanc pour contraste */
 }
 
-h1, h2, h3, .title-29uC1r, .header-2V-4Sw {
-    color: var(--gabriel-gold) !important;
-    text-shadow: var(--gabriel-glow);
+/* Barres latérales / canaux */
+.sidebar-2K8pFh {
+    background-color: rgba(15, 15, 15, 0.85); 
 }
 
-*, body, .markup-eYLPri {
-    color: var(--gabriel-white) !important;
+/* Surlignage des mentions */
+.mention-2Sk6u {
+    background-color: #ff0000; /* rouge ULTRAKILL */
+    color: #ffffff;
 }
 
-.message-2CShn3 {
-    background: rgba(20,18,16,0.45) !important;
-    border-left: 3px solid var(--gabriel-gold);
+/* Bulles de message */
+.message-2qnXI6 .markup-2BOw-j {
+    color: #ffffff; 
 }
 
-.mention {
-    color: var(--gabriel-dark) !important;
-    background: var(--gabriel-gold) !important;
-    font-weight: bold;
-}
-
-a {
-    color: var(--gabriel-gold) !important;
-}
-a:hover {
-    color: var(--gabriel-red) !important;
-}
-
-.sidebar-1tnWFu {
-    background: rgba(14,13,12,0.75) !important;
-    border-right: 2px solid var(--gabriel-gold);
-}
-
-.containerDefault-YUSmu3.selected-2TbFuo {
-    background: rgba(214,182,95,0.2) !important;
-    color: var(--gabriel-gold) !important;
-}
-
-.titleBar-1it3bQ {
-    background: linear-gradient(90deg, var(--gabriel-dark), #1a1610);
-    border-bottom: 2px solid var(--gabriel-gold);
-}
-
-.button-38aScr {
-    background: var(--gabriel-gold) !important;
-    color: var(--gabriel-dark) !important;
-    font-weight: bold;
-}
-.button-38aScr:hover {
-    background: var(--gabriel-red) !important;
-    color: white !important;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--gabriel-gold);
-    border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--gabriel-red);
+/* Barre du haut */
+.titleBar-3_E6h4 {
+    background-color: rgba(20, 20, 20, 0.8);
 }
