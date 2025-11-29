@@ -1,0 +1,121 @@
+/**
+ * @name Gabriel ULTRAKILL
+ * @version 1.0
+ * @author ChatGPT
+ * @description Thème BetterDiscord inspiré de Gabriel (ULTRAKILL)
+*/
+
+/* ------------------------------ */
+/* Font & colors                  */
+/* ------------------------------ */
+
+:root {
+    --gabriel-gold: #d6b65f;
+    --gabriel-red: #b81f1f;
+    --gabriel-white: #f2f2e8;
+    --gabriel-dark: #0d0d0f;
+    --gabriel-glow: 0 0 12px rgba(214, 182, 95, 0.8);
+}
+
+/* Background global */
+.appMount-3lHmkl {
+    background: radial-gradient(circle at center, #1c1a17, #0a0908, #000000);
+}
+
+/* Titres */
+h1, h2, h3, .title-29uC1r, .header-2V-4Sw {
+    color: var(--gabriel-gold) !important;
+    text-shadow: var(--gabriel-glow);
+    font-weight: 700;
+}
+
+/* Texte principal */
+*, body, .markup-eYLPri {
+    color: var(--gabriel-white) !important;
+}
+
+/* Messages */
+.message-2CShn3 {
+    background: rgba(20, 18, 16, 0.45) !important;
+    border-left: 3px solid var(--gabriel-gold);
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+/* Mentions */
+.mention {
+    color: var(--gabriel-dark) !important;
+    background: var(--gabriel-gold) !important;
+    font-weight: bold;
+}
+
+/* Liens */
+a {
+    color: var(--gabriel-gold) !important;
+}
+a:hover {
+    color: var(--gabriel-red) !important;
+}
+
+/* Barre latérale gauche (serveurs) */
+.wrapper-2PSQCG {
+    background: rgba(10, 9, 8, 0.8) !important;
+}
+.guildIcon-2I5sfu {
+    border: 2px solid var(--gabriel-gold);
+    border-radius: 12px;
+}
+
+/* Barre latérale des channels */
+.sidebar-1tnWFu {
+    background: rgba(14, 13, 12, 0.8) !important;
+    border-right: 2px solid var(--gabriel-gold);
+}
+
+/* Channel sélectionné */
+.containerDefault-YUSmu3.selected-2TbFuo {
+    background: rgba(214, 182, 95, 0.2) !important;
+    color: var(--gabriel-gold) !important;
+}
+
+/* Barre supérieure */
+.titleBar-1it3bQ {
+    background: linear-gradient(90deg, var(--gabriel-dark), #1a1610);
+    border-bottom: 2px solid var(--gabriel-gold);
+}
+
+/* Bouton envoyer */
+.button-38aScr {
+    background: var(--gabriel-gold) !important;
+    color: var(--gabriel-dark) !important;
+    font-weight: bold;
+}
+.button-38aScr:hover {
+    background: var(--gabriel-red) !important;
+    color: white !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gabriel-gold);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gabriel-red);
+}
+
+/* Effet “halo” doré sur certains éléments */
+.container-YkUktl:hover,
+.wrapper-NhbLHG:hover,
+.channelName-2YrOjO:hover {
+    text-shadow: 0 0 8px rgba(214,182,95,0.9);
+    color: var(--gabriel-gold);
+}
+
+/* Avatar hover */
+.avatar-1BDn8e:hover {
+    box-shadow: 0 0 15px var(--gabriel-gold);
+}
